@@ -38,7 +38,7 @@ var l = cart.length
 }
 
 function total() {
-  var total = 0
+  total = 0
   for (let i=0, l = cart.length; i<l; i++){
   total = total + cart[i].itemPrice;
   }
@@ -61,7 +61,7 @@ if (item != cart[item]){
     if (typeof(cardNumber) === "undefined"){
       return "Sorry, we don't have a credit card on file for you."
     } else {
-      
+
       var sum = total()
       cart=[]
       return `Your total cost is $${sum}, which will be charged to the card ${cardNumber}.`
